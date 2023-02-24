@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:template_project/app/core/ui/styles/app_styles.dart';
-import 'package:template_project/app/core/ui/styles/colors_app.dart';
 
 class MyTextStyles {
   static MyTextStyles? _instance;

@@ -4,14 +4,21 @@ import 'package:template_project/app/core/ui/styles/colors_app.dart';
 import 'package:template_project/app/core/ui/styles/my_text_styles.dart';
 
 class MyTheme {
+  static MyTheme? _instance;
+
+  MyTheme._();
+
+  static MyTheme get instance {
+    _instance ??= MyTheme._();
+    return _instance!;
+  }
+
   static final _defaultInputBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(7),
     borderSide: BorderSide(color: ColorsApp.instance.onSurface),
   );
 
-  MyTheme._();
-
-  static final myTheme = ThemeData(
+  static final theme = ThemeData(
     primaryColor: ColorsApp.instance.primary,
     scaffoldBackgroundColor: ColorsApp.instance.background,
     elevatedButtonTheme: ElevatedButtonThemeData(
