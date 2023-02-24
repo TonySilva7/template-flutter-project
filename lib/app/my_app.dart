@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:template_project/app/core/ui/theme/my_theme.dart';
-import 'package:template_project/app/pages/splash/splash.dart';
+
+import 'core/routes/app_routes.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: MyTheme.theme,
-      home: SplashPage(
-        key: key,
-      ),
+      // home: SplashPage(
+      //   key: key,
+      // ),
+      routes: AppRoutes().appRoutes,
     );
   }
 }

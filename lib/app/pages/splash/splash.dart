@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:template_project/app/core/ui/helpers/size_extensions.dart';
 import 'package:template_project/app/core/ui/styles/app_styles.dart';
 
 import 'package:template_project/app/core/ui/styles/my_text_styles.dart';
 
+import '../../core/services/custom_dio.dart';
+
 class SplashPage extends StatelessWidget {
-  const SplashPage({super.key});
+  SplashPage({super.key});
+
+  final CustomDioMedium apiService1 = CustomDioMedium('https://api.example.com');
 
   @override
   Widget build(BuildContext context) {
