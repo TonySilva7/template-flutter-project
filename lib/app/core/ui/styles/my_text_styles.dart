@@ -21,7 +21,7 @@ class MyTextStyles {
 
   TextStyle get subtitle => TextStyle(
         fontSize: 18,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
         fontFamily: myFont,
       );
 

@@ -71,11 +71,15 @@ class MyTheme {
       elevation: 0,
       centerTitle: true,
       iconTheme: IconThemeData(
-        color: ColorsApp.instance.primary,
+        color: ColorsApp.instance.background,
       ),
       titleTextStyle: TextStyle(
         color: ColorsApp.instance.background,
       ),
+    ),
+    drawerTheme: DrawerThemeData(
+      elevation: 0,
+      backgroundColor: ColorsApp.instance.background,
     ),
   );
 }
