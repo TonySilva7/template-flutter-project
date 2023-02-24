@@ -9,20 +9,20 @@ class ColorsApp {
     return _instance!;
   }
 
-  Color get primary => const Color(0xFF0D47A1);
-  Color get primaryDark => const Color(0xFF002171);
-  Color get primaryLight => const Color(0xFF5472D3);
-  Color get secondary => const Color(0xFFE65100);
-  Color get secondaryDark => const Color(0xFFAD3400);
-  Color get secondaryLight => const Color(0xFFFF6D00);
-  Color get background => const Color(0xFFECEFF1);
-  Color get surface => const Color(0xFFFFFFFF);
-  Color get error => const Color(0xFFB00020);
+  Color get primary => const Color(0xFF1E90FF);
+  Color get primaryLight => const Color(0xFF6AB7FF);
+  Color get primaryDark => const Color(0xFF0069C0);
   Color get onPrimary => const Color(0xFFFFFFFF);
-  Color get onSecondary => const Color(0xFF000000);
-  Color get onBackground => const Color(0xFF000000);
-  Color get onSurface => const Color(0xEAEAECFF);
-  Color get onError => const Color(0xFFAD3400);
+  Color get secondary => const Color(0xFFFFC107);
+  Color get secondaryLight => const Color(0xFFFFF350);
+  Color get secondaryDark => const Color(0xFFC79100);
+
+  Color get background => const Color(0xFFF5F5F5);
+  Color get backgroundLight => const Color(0xFFFFFFFF);
+  Color get backgroundDark => const Color(0xFFC7C7C7);
+
+  Color get surface => const Color(0xFFFFFFFF);
+  Color get error => const Color(0xFFFF5722);
 }
 
 extension ColorsAppExtension on BuildContext {

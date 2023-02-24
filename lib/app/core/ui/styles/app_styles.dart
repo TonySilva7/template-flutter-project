@@ -16,7 +16,7 @@ class AppStyles {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(7),
         ),
-        backgroundColor: ColorsApp.instance.primary,
+        backgroundColor: ColorsApp.instance.secondary,
         foregroundColor: ColorsApp.instance.onPrimary,
         textStyle: MyTextStyles.instance.textButtonLabel,
         minimumSize: const Size(102, 40),

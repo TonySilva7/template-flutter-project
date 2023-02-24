@@ -15,7 +15,7 @@ class MyTheme {
 
   static final _defaultInputBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(7),
-    borderSide: BorderSide(color: ColorsApp.instance.onSurface),
+    borderSide: BorderSide(color: ColorsApp.instance.backgroundDark),
   );
 
   static final theme = ThemeData(
@@ -30,8 +30,8 @@ class MyTheme {
       isDense: true,
       contentPadding: const EdgeInsets.all(13),
       //  ---
-      labelStyle: MyTextStyles.instance.subtitle.copyWith(color: ColorsApp.instance.onSurface),
-      hintStyle: MyTextStyles.instance.body.copyWith(color: ColorsApp.instance.onSurface),
+      labelStyle: MyTextStyles.instance.subtitle.copyWith(color: ColorsApp.instance.backgroundDark),
+      hintStyle: MyTextStyles.instance.body.copyWith(color: ColorsApp.instance.backgroundDark),
       errorStyle: MyTextStyles.instance.body.copyWith(color: ColorsApp.instance.error),
       errorBorder: _defaultInputBorder.copyWith(borderSide: BorderSide(color: ColorsApp.instance.error)),
       focusedErrorBorder: _defaultInputBorder.copyWith(borderSide: BorderSide(color: ColorsApp.instance.error)),
@@ -67,14 +67,14 @@ class MyTheme {
       secondary: ColorsApp.instance.secondary,
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: ColorsApp.instance.surface,
-      elevation: 1,
+      backgroundColor: ColorsApp.instance.primary,
+      elevation: 0,
       centerTitle: true,
       iconTheme: IconThemeData(
-        color: ColorsApp.instance.onSurface,
+        color: ColorsApp.instance.primary,
       ),
       titleTextStyle: TextStyle(
-        color: ColorsApp.instance.onSurface,
+        color: ColorsApp.instance.background,
       ),
     ),
   );
