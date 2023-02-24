@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:template_project/app/core/providers/auth_provider.dart';
 
 import 'app/my_app.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (ctx) => AuthProvider()),
+    ],
+    child: const MyApp(),
+  ));
 }
